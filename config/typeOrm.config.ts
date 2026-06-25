@@ -16,7 +16,8 @@ export const TypeOrmConfig: TypeOrmModule = env.isTest
       password: env.db.password,
       username: env.db.username,
       database: env.db.name,
+      url: env.db.url,
       port: env.db.port,
-      synchronise: env.node_env !== 'production',
+      synchronise: false,//env.node_env !== 'production',
       autoLoadEntities: true,
     };

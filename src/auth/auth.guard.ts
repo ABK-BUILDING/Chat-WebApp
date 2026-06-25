@@ -1,4 +1,3 @@
-// auth.guard.ts (Exemple NestJS)
 import { Injectable, CanActivate, ExecutionContext, UnauthorizedException } from '@nestjs/common';
 import { getAuth } from 'firebase-admin/auth';
 
